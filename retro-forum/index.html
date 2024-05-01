@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <!-- start nav bar -->
+     <nav class="container mx-auto lg:px-24 py-12">
+       <div class="flex justify-between">
+             <!-- left side -->
+            <div>
+                <h1 class="text-4xl font-bold">ReTro</h1>
+            </div>
+            <!-- right side -->
+            <div class="flex gap-4">
+                 <div class="tooltip" data-tip="Home">
+                      <img src="./images/Frame 2.png" alt="">
+                  </div>
+                 <div class="tooltip" data-tip="add">
+                      <img src="./images/Frame 3.png" alt="">
+                  </div>
+                 <div class="tooltip" data-tip="edit">
+                      <img src="./images/Frame 4.png" alt="">
+                  </div>
+                 <div class="tooltip" data-tip="hello">
+                      <img src="./images/Frame 5.png" alt="">
+                  </div>
+                
+                <button class="btn btn-primary">Sign in</button>
+            </div>
+       </div>
+     </nav>
+     <!-- end navbar -->
+    </header>
+    <main class="container mx-auto lg:px-24 ">
+     <section>
+        <!-- banner start -->
+          
+            <div class=" bg-[url('images/bg.png')] h-[550px] rounded-3xl bg-no-repeat bg-cover bg-[#12132D] rounded-4xl items-center justify-center">
+                <div class="grid grid-cols-1 lg:grid-cols-2 ">
+                    <div class="lg:mt-40 ml-[70px] p-4">
+                        <h1 class=" text-4xl lg:text-5xl font-bold text-white ">Welcome to the <br> <span>ReTro</span> Forum</h1>
+                        <!-- ss -->
+                        <input  id="searchInput" type="text" class="lg:w-96 w-56 h-12 mt-6 outline-none required: rounded-2xl">
+                        <button  onclick="searchByCategory()"class="bg-green-500 px-4 py-3 rounded-lg mt-6 absolute  -ml-20">Search</button>
+                        <!-- ss -->
+                    </div>
+                    <div class="bg-slate-300 lg:w-96 mx-auto rounded-xl shadow-xl border-2 border-emerald-300 h-48 lg:ml-56 lg:mt-40 mr-40 p-4 flex flex-col justify-between">
+                       <div class="flex justify-between"> <h1 class="text-[20px]">Registered Users</h1>
+                        <p class="text-[20px]">01</p></div>
+
+                       <div class="flex justify-between"> <h1 class="text-[20px]">Forum</h1>
+                        <p class="text-[20px]">05</p></div>
+
+                       <div class="flex justify-between"> <h1 class="text-[20px]">Topics</h1>
+                        <p class="text-[20px]">01</p></div>
+
+                       <div class="flex justify-between"> <h1 class="text-[20px]">Replies</h1>
+                        <p class="text-[20px]">01</p></div>
+                    </div>
+                </div>
+        </div>
+                  
+           <!-- banner end -->
+     </section>
+
+     
+     <section class="py-16 items-center">
+      
+        <!-- start Discuss section -->
+        <h2 class="text-4xl font-bold text-center">Let's Discuss</h2>
+        <p class="text-center p-10">Short pieces that aim to highlight for a very broad audience a significant recent development in the field or <br> to raise awareness about a topic of general interest.</p>
+
+        <div class="container mx-auto px-20 " id="spiner">
+            <span class="loading loading-bars loading-xs"></span>
+<span class="loading loading-bars loading-sm"></span>
+<span class="loading loading-bars loading-md"></span>
+<span class="loading loading-bars loading-lg"></span>
+        </div>
+        
+            <div class="container grid grid-cols-1 lg:grid-cols-2 gap-28 justify-center " >
+                <div id="card-container1" class="space-y-5 ">
+          
+                </div>
+                <div class="bg-white shadow-lg rounded-3xl w-[490px] p-2 h-96 mx-24">
+                    <div class="flex px-8 pt-3 items-center justify-between">
+                      <h1 class="font-bold text-xl ">Title</h1>
+                      <h1 class="flex opacity-70">
+                        <img  class="mr-2" src="./images/Group 16.png" alt="s" />
+                        Mark as read (<span id="counts">0</span>)
+                      </h1>
+                    </div>
+                   
+                    <!-- append-content -->
+                    <div class="mt-5" id="addContent" >
+                        
+                        <!-- <div class=" flex justify-between h-24 bg-slate-200 shadow-2xl">
+                            <h1 class="text-[20px] font-semibold p-5">10 Kids Unaware of Their <br> Halloween Costume</h1>
+                            <h1 class="text-[20px] font-semibold p-5">sfdhds</h1> 
+                        </div> -->
+                        
+                    </div>
+
+                    <!-- app -->
+                
+                    <!-- app -->
+
+                  </div>
+                </div>
+            </div>
+        
+        <!-- end Discuss section -->
+     </section>
+     <section class="py-16 bg-[#12132D] h-[830px] lg:h-[500px] rounded-2xl container mx-auto">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+            <div class="flex flex-col p-10 justify-center">
+                <h1 class="text-3xl font-semibold text-white mb-3">Join Our Forum</h1>
+                <p class="text-white">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. </p>
+                <div>
+                    <button class="btn btn-active btn-primary mt-5">Registered Now</button>
+                </div>
+
+            </div>
+            <div>
+                <img src="images/Layer 1.png" class="lg:w-[500px]" alt="">
+            </div>
+        </div>
+       
+     </section>
+     
+     <section class="py-16">
+        <!-- post section start -->
+        <!-- content div -->
+        <div id="card-container2" class="text-center">
+            <h2 class="text-4xl font-bold">Latest Posts</h2>
+            <p>A forum can be divided into categories for the relevant discussions. Under the categories are sub-forums, and <br> these sub-forums can further have more sub-forums.</p>
+        </div>
+        <!-- card div -->
+                <!-- start -->
+                <div class="grid lg:grid-cols-3  gap-12 mt-12 " id="cardInfo">
+                   
+                </div>
+        <!-- post section end -->
+     </section>
+    </main>
+
+
+    <footer class="py-16">
+        <div class="bg-slate-50  background-color: rgb(248 250 252)">
+            <div class="div-1 text-center space-y-4">
+                <h4 class="text-4xl font-bold pt-20">ReTro</h4>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in <br> a piece of classical Latin literature from 45 BC</p>
+                <div class="flex justify-center items-center p-8 gap-10">
+                    <img src="images/logo-twitter 2.png" alt="">
+                    <img src="images/Group.png" alt="">
+                    <img src="images/Group(1).png" alt="">
+                    <img src="images/logo-twitter 2.png" alt="">
+                </div>
+           </div>
+               <hr>
+          
+           <hr>
+           <div class="copyright text-center p-20">
+               <div><small>2017, All Rights Reserved.</small></div>
+           </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+	
