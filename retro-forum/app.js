@@ -30,11 +30,11 @@ const loadData = async () => {
                 <p class="text-base tracking-wider">${item.description}</p>
                 <hr>
                 <div class="flex gap-5">
-                    <img src="images/Vector(4).png" class="w-9 h-9 rounded-full bg-slate-400 shadow-2xl" alt="">
+                    <img src="./images/tabler-icon-message-2.png" class="w-9 h-9 rounded-full  shadow-2xl" alt="">
                     <span>${item.comment_count}</span>
-                    <img src="images/tabler-icon-eye.png" class="w-9 h-9 rounded-full bg-slate-400 shadow-2xl" alt="">
+                    <img src="./images/Group 16.png" class="w-9 h-9 rounded-full  shadow-2xl" alt="">
                     <span id="viewCount${item}">${item.view_count}</span>
-                    <img src="images/tabler-icon-clock-hour-9.png" class="w-9 h-9 rounded-full bg-slate-400 shadow-2xl" alt="">
+                    <img src="./images/Group 18.png" class="w-9 h-9 rounded-full  text-center shadow-2xl" alt="">
                     <span>${item.posted_time}</span>
                     <button onclick="myBtns(${index}, '${item.title} ${item.comment_count}')" class="" id="click-btn${index}">
                         <img src="./images/email 1.png" class="lg:pl-24 alt="">
