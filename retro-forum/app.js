@@ -60,7 +60,7 @@ const loadData = async () => {
                     <h1 class="text-xl font-semibold w-60">${title}</h1>
                 </div>
                 <div class="flex justify-center items-center">
-                    <img src="images/tabler-icon-eye.png" alt="">
+                    <img src="./images/Group 16.png" alt="">
                     <h1 class="text-xl font-semibold" id="viewCountBtn${item}">1568
                     </h1>
                 </div>
@@ -130,7 +130,7 @@ const loadData = async () => {
  
         <div class="bg-slate-200 lg:h-[500px]   p-5 rounded-2xl shadow-2xl border-2 border-gray-100">
         <img class="rounded-xl" src="${item.cover_image}" class="mb-2" alt="latest">
-        <p class="flex gap-2 mb-2 mt-3 "><img src="images/Frame(2).png" alt="time">${item.author.posted_date || 'No Publish Date'}</p>
+        <p class="flex gap-2 mb-2 mt-3 "><img src="./images/Frame.png" alt="time">${item.author.posted_date || 'No Publish Date'}</p>
         <h3 class="font-bold mb-2">${item.title}</h3>
         <p class="mb-2">${item.description}</p>
         <div class="flex  mb-2">
